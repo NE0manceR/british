@@ -1,0 +1,80 @@
+.modal-bcg {
+	position: fixed;
+	display: none;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 4;
+}
+
+.modal-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.contact-modal {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	background-color: white;
+	padding: 60px;
+	border-radius: 10px;
+}
+
+.contact-modal__title {
+	font-size: 36px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.contact-modal__input {
+	font-size: 16px;
+	width: 450px;
+	padding: 20px 10px;
+	border: 1px solid #9ea3b2;
+	background: #FCFCFC;
+	border-radius: 10px;
+}
+
+textarea.contact-modal__input {
+	resize: none;
+}
+
+.contact-modal__input::placeholder {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contact-modal__close-ic {
+	position: absolute;
+	top: 6%;
+	left: 90%;
+	cursor: pointer;
+	width: 3%;
+}
+
+.contact-modal__btn {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	font-size: 18px;
+	background: #DF042A;
+}
+
+@media (max-width: 600px) {
+	.contact-modal {
+		width: 90%;
+		padding: 30px;
+	}
+
+	.contact-modal__input {
+		width: 100%;
+	}
+}
