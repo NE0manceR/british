@@ -152,7 +152,6 @@
                 <div class="video_logo">
                     <iframe src="https://www.youtube.com/embed/fuFzkeWtgkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-
                 <div role="form" class="wpcf7" id="wpcf7-f192-o1" lang="ru-RU" dir="ltr">
                     <div class="screen-reader-response">
                         <p role="status" aria-live="polite" aria-atomic="true"></p>

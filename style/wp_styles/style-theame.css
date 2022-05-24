@@ -262,11 +262,6 @@ body .btn-custom:hover svg {
   z-index: 1040 !important;
 }
 
-.modal {
-  top: 5vh !important;
-  border-radius: 10px;
-  text-align: center;
-}
 .modal .modal-dialog {
   z-index: 1100 !important;
 }
@@ -8713,6 +8708,7 @@ body .btn-custom:hover svg {
 }
 .catal .catalogContainer .cartTov .p .card_items .card_photo img {
   width: 100%;
+  
 }
 .catal .catalogContainer .cartTov .p .card_items .card_body {
   position: absolute;
@@ -11119,6 +11115,7 @@ body .btn-custom:hover svg {
 }
 .card_container .list_content .big .card_items .card_photo img, .card_container .list_content .small .card_items .card_photo img {
   width: 100%;
+  min-height: 300px;
 }
 .card_container .list_content .big .card_items .card_body, .card_container .list_content .small .card_items .card_body {
   position: absolute;

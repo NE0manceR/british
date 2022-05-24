@@ -5,8 +5,8 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.3);
-	z-index: 4;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 21;
 }
 
 .modal-wrap {
@@ -68,6 +68,12 @@ textarea.contact-modal__input {
 	background: #DF042A;
 }
 
+.slider_header {
+	font-size: 42px;
+	color: white;
+	font-weight: 600;
+}
+
 @media (max-width: 600px) {
 	.contact-modal {
 		width: 90%;
@@ -78,3 +84,57 @@ textarea.contact-modal__input {
 		width: 100%;
 	}
 }
+
+.cart_wrapper img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.cart__name {
+	font-size: 14px;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+
+.cart__position, .cart__desc {
+	font-size: 12px;
+	color: #666666
+}
+
+.cart__position {
+	color: black;
+	width: max-content;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #DF042E;
+}
+
+/* .team {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.team .cart {
+	width: calc(25% - 30px);
+}
+
+.team img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 13%);
+	margin-bottom: 15px;
+}
+
+.cart__name {
+	font-size: 18px;
+	color: black;
+	font-weight: 700;
+}
+
+.cart__mail, .cart__phone {
+	font-size: 14px;
+	color: #666666;
+} */
