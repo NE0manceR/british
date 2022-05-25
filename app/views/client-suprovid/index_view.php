@@ -10,8 +10,13 @@
 </style>
 
 <?php
+$feedback = $this->load->function_in_alias('feedback-text', '__get_PageData');
+?>
+
+<?php
 $data = $this->load->function_in_alias('team_syprovid', '__get_PageData');
 ?>
+
 <div class="banner">
   <div class="bannerContainer">
     <div class="row">
@@ -28,7 +33,7 @@ $data = $this->load->function_in_alias('team_syprovid', '__get_PageData');
       </div>
       <div class="col-lg-3 col-0"></div>
       <div class="col-xl-5 col-lg-6 col-md-7 text-center">
-        <a class="btn btn-custom" href="#convoy-info">
+        <a class="btn btn-custom show-contact-modal" href="#convoy-info">
           Дізнатись більше про послугу
           <svg width="53" height="12" viewBox="0 0 53 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11" />
@@ -700,7 +705,7 @@ $data = $this->load->function_in_alias('team_syprovid', '__get_PageData');
     <div class="row">
       <div class="col-lg-3 col-md-2 col-0"></div>
       <div class="col-lg-6 col-md-8 col-12 ">
-        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button class="btn btn-custom show-contact-modal">
           Активувати послугу
           <svg width="53" height="12" viewBox="0 0 53 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11" />
@@ -765,7 +770,7 @@ $data = $this->load->function_in_alias('team_syprovid', '__get_PageData');
 
       </h2>
       <div class="text-white">чи хочете переглянути відеоогляди кожної партії</div>
-      <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <button class="btn btn-custom show-contact-modal">
         Дізнатися більше
         <svg width="53" height="12" viewBox="0 0 53 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11" />
@@ -780,6 +785,7 @@ $data = $this->load->function_in_alias('team_syprovid', '__get_PageData');
     </div>
   </div>
 </div>
+
 <div class="comments">
   <div class="container">
     <div class="row">
@@ -793,84 +799,34 @@ $data = $this->load->function_in_alias('team_syprovid', '__get_PageData');
       <div class="col-12">
         <div class="row">
           <div class="col-lg-7 col-12">
-            <div class="wow bounceInUp row item">
-              <div class="col-12 d-flex align-items-center">
-                <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/comment.png" alt="">
-                <div class="h8">
-                  Євген Коваленко
-                </div>
-                <div class="stars">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                </div>
-              </div>
-              <div class="col-12 d-flex align-items-center my-md-3 my-2 justify-content-between">
-                <div class="brd">
-                </div>
-                <div class="data">
-                  08.12.21
-                </div>
-              </div>
-              <div class="col-12 text">
-                Замовляли декілька разів взуття - завжди все чудово! консультант допомогав з вибором, розіміром, відправка НП. Взуття якісне за доступними цінами. Дякуємо! І сьогодні розмістила замовлення;-)
-              </div>
+            <?php foreach ($feedback->section as $item) { ?>
+              <div class="wow bounceInUp row item feedback-wrap">
 
-            </div>
-            <div class="wow bounceInUp row my-lg-5 my-md-4 my-3 item">
-              <div class="col-12 d-flex align-items-center">
-                <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/comment1.png" alt="">
-                <div class="h8">
-                  Євген Коваленко
+                <div class="col-12 d-flex align-items-center">
+                  <img class="feedback-img" src="<?= IMG_PATH . $item->images[0]->path ?>" alt="<?= $item->images[0]->title ?>">
+                  <div class="h8">
+                    <?= $item->images[0]->title ?>
+                  </div>
+                  <div class="stars">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
+                  </div>
                 </div>
-                <div class="stars">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
+                <div class="col-12 d-flex align-items-center my-md-3 my-2 justify-content-between">
+                  <div class="brd">
+                  </div>
+                  <div class="data">
+                    <?= $item->title ?>
+                  </div>
                 </div>
-              </div>
-              <div class="col-12 d-flex align-items-center my-md-3 my-2 justify-content-between">
-                <div class="brd">
-                </div>
-                <div class="data">
-                  13.11.21
-                </div>
-              </div>
-              <div class="col-12 text">
-                Ми можемо зарахувати себе постійними покупцями MAX BABY SHOP, тому що завжди купуємо тут взуття: кросівки, сезонне взуття, тапочки в садочок. Переваги: 1) завжди великий асортимент, який часто оновлюється; 2) відмінна якість; 3) стильне взуття, тут кожен обере на свій смак; 4) дуже ввічливі консультанти-продавці, які завжди допоможуть вибрати потрібну модель взуття. А це основне, вони продають не лише взуття, а емоцію, гарний настрій від здійсненої покупки. Мої донечки завжди задоволені. MAX BABY SHOP рекомендую!!! Вдалий вибір і гарний настрій!
-              </div>
-
-            </div>
-            <div class="wow bounceInUp row item">
-              <div class="col-12 d-flex align-items-center">
-                <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/comment.png" alt="">
-                <div class="h8">
-                  Євген Коваленко
-                </div>
-                <div class="stars">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
-                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/img/stars.png" alt="">
+                <div class="col-12 text">
+                  <?= $item->value ?>
                 </div>
               </div>
-              <div class="col-12 d-flex align-items-center my-md-3 my-2 justify-content-between">
-                <div class="brd">
-                </div>
-                <div class="data">
-                  08.12.21
-                </div>
-              </div>
-              <div class="col-12 text">
-                Замовляли декілька разів взуття - завжди все чудово! консультант допомогав з вибором, розіміром, відправка НП. Взуття якісне за доступними цінами. Дякуємо! І сьогодні розмістила замовлення;-)
-              </div>
-
-            </div>
+            <?php } ?>
           </div>
           <div class="col-lg-5  d-none d-lg-block">
             <div class="left">
@@ -898,11 +854,11 @@ $data = $this->load->function_in_alias('team_syprovid', '__get_PageData');
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
+        slidesPerView: 1.2,
         spaceBetween: 20,
       },
       640: {
-        slidesPerView: 2,
+        slidesPerView: 2.3,
         spaceBetween: 20,
       },
       990: {

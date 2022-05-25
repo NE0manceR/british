@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="<?= SERVER_URL . 'style/' . $_SESSION['alias']->alias . '/index.css' ?>">
 <div class="container">
-	<h1><?= $_SESSION['alias']->name ?></h1>
+	<h1 class="products-title"><?= $_SESSION['alias']->name ?></h1>
 	<?php if (!empty($catalogAllGroups)) { ?>
 		<section class="groups">
 			<?php foreach ($catalogAllGroups as $group) {
@@ -20,9 +20,7 @@
 			<?php }
 			}
 			$addDiv = count($catalogAllGroups) % 3;
-			while ($addDiv++ < 3) {
-				echo "<figure class='empty'></figure>";
-			} ?>
+			?>
 		</section>
 	<?php } ?>
 </div>

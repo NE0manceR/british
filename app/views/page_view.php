@@ -21,8 +21,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-	<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-	<link rel='dns-prefetch' href='//s.w.org' />
+	<!-- <link rel='dns-prefetch' href='//cdn.jsdelivr.net' /> -->
+	<!-- <link rel='dns-prefetch' href='//s.w.org' /> -->
 	<link rel="stylesheet" href="<?= SERVER_URL ?>style/swiper-bundle.min.css">
 	<script type="text/javascript" src="<?= SERVER_URL ?>assets/jquery/jquery-3.5.1.min.js"></script>
 
@@ -336,7 +336,7 @@
 			font-size: var(--wp--preset--font-size--x-large) !important;
 		}
 	</style>
-	<link rel='stylesheet' id='contact-form-7-css' href='<?= SERVER_URL ?>style/wp_styles/style.css' type='text/css' media='all' />
+	<!-- <link rel='stylesheet' id='contact-form-7-css' href='<?= SERVER_URL ?>style/wp_styles/style.css' type='text/css' media='all' /> -->
 	<link rel='stylesheet' id='menu-image-css' href='<?= SERVER_URL ?>style/wp_styles/menu-image.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='dashicons-css' href='<?= SERVER_URL ?>style/wp_styles/dashicons.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='ivory-search-styles-css' href='<?= SERVER_URL ?>style/wp_styles/ivory-search.min.css' type='text/css' media='all' />
@@ -346,12 +346,12 @@
 	<link rel='stylesheet' id='style-css' href='<?= SERVER_URL ?>style/wp_styles/style-theame.css' type='text/css' media='all' />
 	<script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/jquery-migrate.min.js' id='jquery-core-js'></script>
 	<script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/jquery-migrate2.min.js' id='jquery-migrate-js'></script>
-	<link rel="https://api.w.org/" href="<?= SERVER_URL ?>style/wp_js/download.json/" />
-	<link rel="alternate" type="application/json" href="<?= SERVER_URL ?>style/wp_js/42.json" />
+	<!-- <link rel="https://api.w.org/" href="<?= SERVER_URL ?>style/wp_js/download.json/" /> -->
+	<!-- <link rel="alternate" type="application/json" href="<?= SERVER_URL ?>style/wp_js/42.json" /> -->
 	<!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://britishsecond.localhost/xmlrpc.php?rsd" /> -->
 	<!-- <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://britishsecond.localhost/wp-includes/wlwmanifest.xml" /> -->
-	<link rel="alternate" type="application/json+oembed" href="=<?= SERVER_URL ?>style/wp_js/embed.json" />
-	<link rel="alternate" type="text/xml+oembed" href="<?= SERVER_URL ?>style/wp_js/embed2.json" />
+	<!-- <link rel="alternate" type="application/json+oembed" href="=<?= SERVER_URL ?>style/wp_js/embed.json" /> -->
+	<!-- <link rel="alternate" type="text/xml+oembed" href="<?= SERVER_URL ?>style/wp_js/embed2.json" /> -->
 	<link rel="stylesheet" href="<?= SERVER_URL ?>style/style.css">
 </head>
 
@@ -372,8 +372,8 @@
 	<div id="divLoading"></div>
 	<div id="modal-bg"></div>
 	<!-- <link rel='stylesheet' id='ivory-ajax-search-styles-css' href='<?= SERVER_URL ?>style/wp_styles/ivory-ajax-search.min.css/' type='text/css' media='all' /> -->
-	<script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
-	<script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+	<!-- <script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/regenerator-runtime.min.js' id='regenerator-runtime-js'></script> -->
+	<!-- <script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/wp-polyfill.min.js' id='wp-polyfill-js'></script> -->
 	<script type='text/javascript' id='contact-form-7-js-extra'>
 		/* <![CDATA[ */
 		// var wpcf7 = {
@@ -392,8 +392,8 @@
 		// };
 		/* ]]> */
 	</script>
-	<script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/ivory-search.min.js' id='ivory-search-scripts-js'></script>
-	<script type='text/javascript' id='ivory-ajax-search-scripts-js-extra'>
+	<!-- <script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/ivory-search.min.js' id='ivory-search-scripts-js'></script> -->
+	<!-- <script type='text/javascript' id='ivory-ajax-search-scripts-js-extra'> -->
 		/* <![CDATA[ */
 		var IvoryAjaxVars = {
 			"ajaxurl": "http:\/\/britishsecond.localhost\/wp-admin\/admin-ajax.php",
@@ -401,7 +401,7 @@
 		};
 		/* ]]> */
 	</script>
-	<script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/ivory-ajax-search.min.js' id='ivory-ajax-search-scripts-js'></script>
+	<!-- <script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/ivory-ajax-search.min.js' id='ivory-ajax-search-scripts-js'></script> -->
 	<script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/bootstrap.bundle.min.js' id='bootstrap-script-js'></script>
 	<script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/slick.min.js' id='slick-script-js'></script>
 	<script type='text/javascript' src='<?= SERVER_URL ?>style/wp_js/wow.min.js' id='slick-script-js' id='wow-js'></script>

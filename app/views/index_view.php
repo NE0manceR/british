@@ -1217,37 +1217,6 @@ $data = $this->load->function_in_alias('team', '__get_PageData');
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
 				</div>
-				<!-- <div class="customCarousel" id="customCarousel">
-					<div class="button">
-						<div class="pred-video" id='pred1'>
-							<svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M47.5 9H2M2 9L10 1M2 9L10 17" stroke-width="2" />
-							</svg>
-
-						</div>
-						<div class="next-video active" id='next1'>
-							<svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M0.5 9H46M46 9L38 1M46 9L38 17" stroke-width="2" />
-							</svg>
-						</div>
-					</div>
-
-					<div class="customCarouselWrapper">
-						<div class="customCarouselItem active order-first" id="item0" data-index="item0">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-						</div>
-						<div class="customCarouselItem order-2 " id="item1">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="customCarouselItem order-3" id="item2">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="customCarouselItem order-4" id="item3">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</div>
@@ -1308,10 +1277,10 @@ $data = $this->load->function_in_alias('team', '__get_PageData');
 <div class="season">
 	<div class="seasonContainer">
 		<ul id="menu-%d0%bc%d0%b5%d0%bd%d1%8e-%d0%ba%d0%b0%d1%82%d0%b5%d0%b3%d0%be%d1%80i%d0%b9-1" class="season-menu">
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260"><a href="/products-category/zima/" class="menu-image-title-after menu-image-hovered"><span class='menu-image-hover-wrapper'><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/snow.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><img width="31" height="30" src="<?= SERVER_URL ?>style/img/uploads/2022/02/winterred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -31px;" /></span><span class="menu-image-title-after menu-image-title">Зима</span></a></li>
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-248"><a href="/products-category/vesna/" class="menu-image-title-after menu-image-hovered"><span class='menu-image-hover-wrapper'><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/vesna.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/springred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;" /></span><span class="menu-image-title-after menu-image-title">Весна</span></a></li>
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-261"><a href="/products-category/lito/" class="menu-image-title-after menu-image-hovered"><span class='menu-image-hover-wrapper'><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/lito.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/02/summerred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -29px;" /></span><span class="menu-image-title-after menu-image-title">Літо</span></a></li>
-			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-259"><a href="/products-category/osin/" class="menu-image-title-after menu-image-hovered"><span class='menu-image-hover-wrapper'><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/osen.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/autumnred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;" /></span><span class="menu-image-title-after menu-image-title">Осінь</span></a></li>
+			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260"><a href="<?= SITE_URL ?>products/zyma/" class="menu-image-title-after menu-image-hovered"><span class='menu-image-hover-wrapper'><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/snow.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><img width="31" height="30" src="<?= SERVER_URL ?>style/img/uploads/2022/02/winterred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -31px;" /></span><span class="menu-image-title-after menu-image-title">Зима</span></a></li>
+			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-248"><a href="<?= SITE_URL ?>products/vesna/" class="menu-image-title-after menu-image-hovered"><span class='menu-image-hover-wrapper'><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/vesna.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/springred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;" /></span><span class="menu-image-title-after menu-image-title">Весна</span></a></li>
+			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-261"><a href="<?= SITE_URL ?>products/lito/" class="menu-image-title-after menu-image-hovered"><span class='menu-image-hover-wrapper'><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/lito.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/02/summerred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -29px;" /></span><span class="menu-image-title-after menu-image-title">Літо</span></a></li>
+			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-259"><a href="<?= SITE_URL ?>products/osin/" class="menu-image-title-after menu-image-hovered"><span class='menu-image-hover-wrapper'><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/osen.png" class="menu-image menu-image-title-after" alt="" loading="lazy" /><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/autumnred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;" /></span><span class="menu-image-title-after menu-image-title">Осінь</span></a></li>
 		</ul>
 	</div>
 </div>

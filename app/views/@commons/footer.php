@@ -41,7 +41,7 @@
                     </li>
                 </ul>
                 <div class="launch">
-                    <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-custom show-contact-modal">
                         Безкоштовна консультація <img src="<?= SERVER_URL ?>style/images/button-line.png" alt="">
                     </button>
                 </div>

@@ -3,5 +3,6 @@ $('.show-contact-modal, .contact-modal__close-ic').on('click', function () {
 })
 
 function contact_modal_toggle() {
+  console.log('work')
   $('.modal-bcg').fadeToggle();
 }

@@ -1,3 +1,55 @@
+
+<style>
+	.swiper-wrap {
+		width: 100%;
+		height: 500px !important;
+	}
+
+	.swiper-wrap img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+</style>
+
+<div class="title">
+	<div class="item_container">
+		<div class="title_wrapper">
+			<h1>
+				<?= $_SESSION['alias']->name ?></h1>
+		</div>
+	</div>
+</div>
+<div class="card_content  blog-container">
+	<div class="item_container">
+		<div class="content_wrapper">
+			<div class="card_left ">
+				<!-- Swiper -->
+				<div class="swiper mySwiper swiper-wrap">
+					<div class="swiper-wrapper">
+						<?php foreach ($_SESSION['alias']->images as $img) { ?>
+							<div class="swiper-slide">
+								<img src="<?= IMG_PATH  . $img->path ?>" alt="<?= $img->title ?>" title="<?= $img->title ?>">
+
+							</div>
+						<?php } ?>
+					</div>
+				</div>
+			</div>
+			<div class="card_right">
+				<div class="info">
+					<p><?= $_SESSION['alias']->text ?></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<?php
+/*
+	
 <link rel="stylesheet" type="text/css" href="<?=SERVER_URL.'style/'.$_SESSION['alias']->alias.'/library.css'?>">
 
 <main class="container">
@@ -47,3 +99,18 @@
 		</aside>
 	</div>
 </main>
+*/
+?>
+
+<script src="<?= SERVER_URL ?>js/swiper-bundle.min.js"></script>
+
+<script>
+	var swiper = new Swiper(".mySwiper", {
+		slidesPerView: 1.05,
+		loop: true,
+		spaceBetween: 10,
+		autoplay: {
+			delay: 2500,
+		},
+	});
+</script>

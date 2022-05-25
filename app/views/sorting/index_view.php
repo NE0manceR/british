@@ -1,3 +1,18 @@
+<style>
+  .swiper {
+    margin-bottom: 36px;
+  }
+
+  .swiper-slide {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #DF042E;
+  }
+</style>
 <div class="banner sortBG">
   <div class="bannerContainer">
     <div class="row">
@@ -14,7 +29,7 @@
       </div>
       <div class="col-lg-5 col-0"></div>
       <div class="col-lg-4 col-md-7 text-center">
-        <a href="/products/" class="btn btn-custom">
+        <a href=" <?= SERVER_URL ?>products" class="btn btn-custom">
           КАТАЛОГ
           <svg width="53" height="12" viewBox="0 0 53 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11"></path>
@@ -27,10 +42,10 @@
 <div class="season">
   <div class="seasonContainer">
     <ul id="menu-%d0%bc%d0%b5%d0%bd%d1%8e-%d0%ba%d0%b0%d1%82%d0%b5%d0%b3%d0%be%d1%80i%d0%b9" class="season-menu">
-      <li id="menu-item-260" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260"><a href="/products-category/zima/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/snow.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="31" height="30" src="<?= SERVER_URL ?>style/img/uploads/2022/02/winterred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -31px;"></span><span class="menu-image-title-after menu-image-title">Зима</span></a></li>
-      <li id="menu-item-248" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-248"><a href="/products-category/vesna/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/vesna.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/springred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;"></span><span class="menu-image-title-after menu-image-title">Весна</span></a></li>
-      <li id="menu-item-261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-261"><a href="/products-category/lito/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/lito.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/02/summerred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -29px;"></span><span class="menu-image-title-after menu-image-title">Літо</span></a></li>
-      <li id="menu-item-259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-259"><a href="/products-category/osin/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/osen.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/autumnred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;"></span><span class="menu-image-title-after menu-image-title">Осінь</span></a></li>
+      <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/zyma/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/snow.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="31" height="30" src="<?= SERVER_URL ?>style/img/uploads/2022/02/winterred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -31px;"></span><span class="menu-image-title-after menu-image-title">Зима</span></a></li>
+      <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/vesna/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/vesna.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/springred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;"></span><span class="menu-image-title-after menu-image-title">Весна</span></a></li>
+      <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/lito/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/lito.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/02/summerred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -29px;"></span><span class="menu-image-title-after menu-image-title">Літо</span></a></li>
+      <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/osin/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/osen.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/autumnred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;"></span><span class="menu-image-title-after menu-image-title">Осінь</span></a></li>
     </ul>
   </div>
 </div>
@@ -329,7 +344,7 @@
       <div class="col-12 px-0">
         <div class="row h-100 mx-0">
           <div class="col-3 zima px-0">
-            <a href="/products-category/zima/">
+            <a href="<?= SITE_URL ?>products/zYma/">
               <div class="abs3"></div>
               <span class="turn">
                 ЗИМА
@@ -337,7 +352,7 @@
             </a>
           </div>
           <div class="col-3 vesna px-0">
-            <a href="/products-category/vesna/">
+            <a href="<?= SITE_URL ?>products/vesna/">
               <div class="abs3"></div>
               <span class="turn">
                 ВЕСНА
@@ -345,7 +360,7 @@
             </a>
           </div>
           <div class="col-3 lito px-0">
-            <a href="/products-category/lito/">
+            <a href="<?= SITE_URL ?>products/lito/">
               <div class="abs3"></div>
               <span class="turn">
                 ЛІТО
@@ -353,7 +368,7 @@
             </a>
           </div>
           <div class="col-3 osen px-0">
-            <a href="/products-category/osin/">
+            <a href="<?= SITE_URL ?>products/osin/">
               <div class="abs3"></div>
               <span class="turn">
                 ОСІНЬ
@@ -521,6 +536,7 @@
     </div>
   </div>
 </div>
+
 <div class="commentClient mt-4">
   <div class="commentClientContainer">
     <div class="row">
@@ -530,36 +546,26 @@
         <div> останніх надходжень </div>
       </div>
       <div class="col-12 d-lg-block d-none">
-        <div class="customCarousel" id="customCarousel1">
-          <div class="button">
-            <div class="pred-video" id="pred2">
-              <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M47.5 9H2M2 9L10 1M2 9L10 17" stroke-width="2"></path>
-              </svg>
-
+      <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="next-video active" id="next2">
-              <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.5 9H46M46 9L38 1M46 9L38 17" stroke-width="2"></path>
-              </svg>
-
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-          </div>
-
-          <div class="customCarouselWrapper">
-            <div class="customCarouselItem active order-first" id="1item0">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-              <div class="videoTitle">ХАЛАТИ</div>
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="customCarouselItem order-2 " id="1item1">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-              <div class="videoTitle">ВЗУТТЯ</div>
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="customCarouselItem order-3" id="1item2">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-              <div class="videoTitle">ЖІНОЧІЙ МІКС</div>
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
       <div class="col-12 d-lg-none d-block">
@@ -852,35 +858,26 @@
         <h1 class="text-dark rLine">Ось, що кажуть постійні клієнти про нашу сортовку</h1>
       </div>
       <div class="col-12 d-lg-block d-none">
-
-        <div class="customCarousel" id="customCarousel">
-
-          <div class="button">
-            <div class="pred-video" id="pred1">
-              <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M47.5 9H2M2 9L10 1M2 9L10 17" stroke-width="2"></path>
-              </svg>
-
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="next-video active" id="next1">
-              <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.5 9H46M46 9L38 1M46 9L38 17" stroke-width="2"></path>
-              </svg>
-
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-          </div>
-          <div class="customCarouselWrapper">
-            <div class="customCarouselItem active order-first" id="item0" data-index="item0">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="customCarouselItem order-2 " id="item1">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="customCarouselItem order-3" id="item2">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <div class="swiper-slide">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
       <div class="col-12 d-lg-none d-block">
@@ -954,3 +951,40 @@
     </div>
   </div>
 </div>
+
+<script src="<?= SERVER_URL ?>js/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper3 = new Swiper(".mySwiper", {
+    slidesPerView: 3.5,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      990: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    }
+  });
+</script>

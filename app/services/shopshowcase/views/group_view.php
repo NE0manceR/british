@@ -1,6 +1,6 @@
 <div class="card_container">
 	<div class="title">
-		<h2 class="text_title" style="background: white; z-index: 3"><span>Товари</span></h2>
+		<h2 class="text_title" style="background: white; z-index: 3"><span><?= $_SESSION['alias']->name ?></span></h2>
 	</div> 
 	<div class="list_content">
 		<?php foreach ($products as $product) { ?>

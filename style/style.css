@@ -98,7 +98,8 @@ textarea.contact-modal__input {
 	margin-bottom: 6px;
 }
 
-.cart__position, .cart__desc {
+.cart__position,
+.cart__desc {
 	font-size: 12px;
 	color: #666666
 }
@@ -138,3 +139,30 @@ textarea.contact-modal__input {
 	font-size: 14px;
 	color: #666666;
 } */
+
+.products-title {
+	color: black;
+	padding: 30px 0;
+}
+
+.container .groups {
+	height: calc(100vh - 250px);
+}
+
+.feedback-img {
+	width: 36px;
+	height: 36px;
+	object-fit: cover;
+}
+
+.feedback-wrap {
+	margin-bottom: 16px;
+}
+
+.blog-container {
+	margin-bottom: 36px;
+}
+
+.title {
+	margin-bottom: 20px;
+}

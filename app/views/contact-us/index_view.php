@@ -87,7 +87,40 @@
             З вами працюють досвідчені менеджери
           </h3>
           <div class="card_list">
-            <div class="cart">
+
+            <?php foreach ($_SESSION['alias']->section as $section) { ?>
+              <div class="cart">
+                <div class="red_line1">
+                  <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/redLine.png" alt="">
+                </div>
+                <div class="cart_wrapper">
+                  <div class="img">
+                    <img src="<?= IMG_PATH . $section->images[0]->sm_path ?>" alt="<?= $section->images[0]->title ?>">
+                  </div>
+                  <p class="name">
+                    <?= $section->images[0]->title ?>
+                  </p>
+                  <p class="job">
+                    менеджер з продажу
+                  </p>
+                  <ul class="contact_card">
+                    <li class="tel">
+                      <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/telsmall.png" alt="">
+                      <a href="tel: <?= $section->title ?>"><?= $section->title ?></a>
+                    </li>
+                    <!-- <li class="skype">
+                      <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/ant-design_skype-outlined.png" alt="">
+                      <a href="skype:olexander.lornyk">olexander.lornyk</a>
+                    </li> -->
+                    <li class="mail">
+                      <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/mailsmall.png" alt="">
+                      <a href="mailto:<?= $section->value ?>"><?= $section->value ?></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            <?php } ?>
+            <!-- <div class="cart">
               <div class="red_line1">
                 <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/redLine.png" alt="">
               </div>
@@ -176,7 +209,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
