@@ -122,19 +122,21 @@
                         <?php } ?>
                     </div>
                 </div>
-                <div class="video_logo">
-                    <div class="swiper  mySwiper mySwiper4">
-                        <div class="swiper-wrapper">
-                            <?php foreach ($_SESSION['alias']->videos as $video) { ?>
-                                <div class="swiper-slide">
-                                    <iframe src="https://www.youtube.com/embed/<?= $video->link ?>" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            <?php } ?>
+                <?php if(!empty($_SESSION['alias']->videos)) {?>
+                    <div class="video_logo">
+                        <div class="swiper  mySwiper mySwiper4">
+                            <div class="swiper-wrapper">
+                                <?php foreach ($_SESSION['alias']->videos as $video) { ?>
+                                    <div class="swiper-slide">
+                                        <iframe src="https://www.youtube.com/embed/<?= $video->link ?>" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
-                </div>
+                <?php } ?>
             </div>
             <div class="card_right">
                 <div class="info">
