@@ -58,13 +58,13 @@
         padding: 10px 0;
     }
 
-    .mySwiper .swiper-slide {
+    .mySwiper3 .swiper-slide {
         width: 25%;
         height: 100%;
         opacity: 0.4;
     }
 
-    .mySwiper .swiper-slide-thumb-active {
+    .mySwiper3 .swiper-slide-thumb-active {
         opacity: 1;
     }
 
@@ -73,6 +73,19 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .mySwiper4 {
+        height: 100%;
+    }
+
+    .mySwiper4 .swiper-slide {
+        height: 100%;
+    }
+
+    .mySwiper4 .swiper-button-next,
+    .mySwiper4 .swiper-button-prev {
+        color: #DF042A;
     }
 </style>
 
@@ -100,7 +113,7 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-                <div thumbsSlider="" class="swiper mySwiper">
+                <div thumbsSlider="" class="swiper mySwiper mySwiper3 ">
                     <div class="swiper-wrapper">
                         <?php foreach ($_SESSION['alias']->images as $image) { ?>
                             <div class="swiper-slide">
@@ -110,7 +123,17 @@
                     </div>
                 </div>
                 <div class="video_logo">
-                    <iframe src="https://www.youtube.com/embed/cL6TQS7vpws"" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="swiper  mySwiper mySwiper4">
+                        <div class="swiper-wrapper">
+                            <?php foreach ($_SESSION['alias']->videos as $video) { ?>
+                                <div class="swiper-slide">
+                                    <iframe src="https://www.youtube.com/embed/<?= $video->link ?>" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
             <div class="card_right">
@@ -150,7 +173,17 @@
                     <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/camera.png" alt="camera"> Усі фото є оригінальними
                 </div>
                 <div class="video_logo">
-                    <iframe src="https://www.youtube.com/embed/fuFzkeWtgkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="swiper  mySwiper mySwiper4">
+                        <div class="swiper-wrapper">
+                            <?php foreach ($_SESSION['alias']->videos as $video) { ?>
+                                <div class="swiper-slide">
+                                    <iframe src="https://www.youtube.com/embed/<?= $video->link ?>" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
                 <div role="form" class="wpcf7" id="wpcf7-f192-o1" lang="ru-RU" dir="ltr">
                     <div class="screen-reader-response">
@@ -333,7 +366,7 @@
 
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper3", {
         spaceBetween: 10,
         slidesPerView: 4,
         freeMode: true,
@@ -348,5 +381,19 @@
         thumbs: {
             swiper: swiper,
         },
+    });
+
+    var swiper = new Swiper(".mySwiper4", {
+        spaceBetween: 10,
+        slidesPerView: 1.2,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+
     });
 </script>

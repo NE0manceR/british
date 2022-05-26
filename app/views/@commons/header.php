@@ -25,9 +25,17 @@
                                     background-color: #ffffff !important;
                                 }
                             </style>
-                            <form data-min-no-for-search="1" data-result-box-max-height="400" data-form-id="307" class="is-search-form is-form-style is-form-style-3 is-form-id-307 is-ajax-search" action="<?= SITE_URL ?>" method="get" role="search"><label for="is-search-input-307"><span class="is-screen-reader-text">Search for:</span><input type="search" id="is-search-input-307" name="s" value="" class="is-search-input" placeholder="Пошук по сайту" autocomplete="off"><span class="is-loader-image" style="display: none;background-image:url(<?= SERVER_URL ?>style/imgplugins/add-search-to-menu/public/images/spinner.gif);"></span></label><button type="submit" class="is-search-submit"><span class="is-screen-reader-text">Search Button</span><span class="is-search-icon"><svg focusable="false" aria-label="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px">
+                            <form class="is-search-form is-form-style is-form-style-3 search" action="<?= SITE_URL ?>products/search" method="GET" role="search">
+                                <label for="is-search-input-307">
+                                    <span class="is-screen-reader-text">Search for:</span>
+                                    <input type="text" name="name" value="<?= $this->data->get('name') ?>" required class="is-search-input" placeholder="Пошук по сайту" autocomplete="off">
+                                    <span class="is-loader-image" style="display: none;background-image:url(<?= SERVER_URL ?>style/imgplugins/add-search-to-menu/public/images/spinner.gif);"></span></label><button type="submit" class="is-search-submit"><span class="is-screen-reader-text">Search Button</span><span class="is-search-icon"><svg focusable="false" aria-label="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px">
                                             <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                                        </svg></span></button><input type="hidden" name="id" value="307"><input type="hidden" name="post_type" value="products"></form>
+                                        </svg>
+                                    </span></button>
+                                <!-- <input type="hidden" name="by" value="<?= $this->data->get('by') ?>" required> -->
+                                <!-- <input type="hidden" name="by" value="<?= $this->data->get('by') ?>" required> -->
+                            </form>
                         </div>
                         <div class=" icon_social-logo">
                             <div class="img-social d-flex">
@@ -111,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <form id="form_header" class="input_header_search" action="#">
+            <form id="form_header" class="input_header_search" action="<?= SERVER_URL ?>products/search">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="closedSvg bi bi-x-lg" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"></path>
                     <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"></path>
@@ -132,7 +140,9 @@
                         border-color: #e53434 !important;
                     }
                 </style>
-                <label for="is-search-input-338"><span class="is-screen-reader-text">Search for:</span><input type="search" id="is-search-input-338" name="s" value="" class="is-search-input" placeholder="Пошук" autocomplete="off"><span class="is-loader-image" style="display: none;background-image:url(<?= SERVER_URL ?>style/imgplugins/add-search-to-menu/public/images/spinner.gif);"></span></label><input type="hidden" name="id" value="338"><input type="hidden" name="post_type" value="products">
+                <label for="is-search-input-338"><span class="is-screen-reader-text">Search for:</span>
+                    <input type="text" name="name" value="<?= $this->data->get('name') ?>" required class="is-search-input" placeholder="Пошук" autocomplete="off">
+                    <span class="is-loader-image" style="display: none;background-image:url(<?= SERVER_URL ?>style/imgplugins/add-search-to-menu/public/images/spinner.gif);"></span></label><input type="hidden" name="id" value="338"><input type="hidden" name="post_type" value="products">
             </form>
 
         </div>
