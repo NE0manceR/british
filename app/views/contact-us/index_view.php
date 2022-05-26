@@ -3,7 +3,7 @@
     <div class="container_british">
       <div class="british_wrapper">
         <div class="red_line">
-          <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/redLine.png" alt="">
+          <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/redLine.png" alt="">
         </div>
         <h2>
           Оберіть один з 3-х варіантів зв'язку з BritishSecond
@@ -91,7 +91,7 @@
             <?php foreach ($_SESSION['alias']->section as $section) { ?>
               <div class="cart">
                 <div class="red_line1">
-                  <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/redLine.png" alt="">
+                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/redLine.png" alt="">
                 </div>
                 <div class="cart_wrapper">
                   <div class="img">
@@ -105,15 +105,15 @@
                   </p>
                   <ul class="contact_card">
                     <li class="tel">
-                      <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/telsmall.png" alt="">
+                      <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/telsmall.png" alt="">
                       <a href="tel: <?= $section->title ?>"><?= $section->title ?></a>
                     </li>
                     <!-- <li class="skype">
-                      <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/ant-design_skype-outlined.png" alt="">
+                      <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/ant-design_skype-outlined.png" alt="">
                       <a href="skype:olexander.lornyk">olexander.lornyk</a>
                     </li> -->
                     <li class="mail">
-                      <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/mailsmall.png" alt="">
+                      <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/mailsmall.png" alt="">
                       <a href="mailto:<?= $section->value ?>"><?= $section->value ?></a>
                     </li>
                   </ul>
@@ -122,11 +122,11 @@
             <?php } ?>
             <!-- <div class="cart">
               <div class="red_line1">
-                <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/redLine.png" alt="">
+                <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/redLine.png" alt="">
               </div>
               <div class="cart_wrapper">
                 <div class="img">
-                  <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/card1.png" alt="card1">
+                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/card1.png" alt="card1">
                 </div>
                 <p class="name">
                   Олександра Корнюк
@@ -136,15 +136,15 @@
                 </p>
                 <ul class="contact_card">
                   <li class="tel">
-                    <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/telsmall.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/telsmall.png" alt="">
                     <a href="tel:+38 (095) 454-44-56">+38 (095) 454-44-56</a>
                   </li>
                   <li class="skype">
-                    <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/ant-design_skype-outlined.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/ant-design_skype-outlined.png" alt="">
                     <a href="skype:olexander.lornyk">olexander.lornyk</a>
                   </li>
                   <li class="mail">
-                    <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/mailsmall.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/mailsmall.png" alt="">
                     <a href="mailto:olexander.lornyk@gmail.com">olexander.lornyk<br>@gmail.com</a>
                   </li>
                 </ul>
@@ -152,11 +152,11 @@
             </div>
             <div class="cart">
               <div class="red_line2">
-                <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/redLine.png" alt="">
+                <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/redLine.png" alt="">
               </div>
               <div class="cart_wrapper">
                 <div class="img">
-                  <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/card2.png" alt="card1">
+                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/card2.png" alt="card1">
                 </div>
                 <p class="name">
                   Олександра Корнюк
@@ -166,15 +166,15 @@
                 </p>
                 <ul class="contact_card">
                   <li class="tel">
-                    <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/telsmall.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/telsmall.png" alt="">
                     <a href="tel:+38 (095) 454-44-56">+38 (095) 454-44-56</a>
                   </li>
                   <li class="skype">
-                    <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/ant-design_skype-outlined.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/ant-design_skype-outlined.png" alt="">
                     <a href="skype:olexander.lornyk">olexander.lornyk</a>
                   </li>
                   <li class="mail">
-                    <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/mailsmall.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/mailsmall.png" alt="">
                     <a href="mailto:olexander.lornyk@gmail.com">olexander.lornyk<br>@gmail.com</a>
                   </li>
                 </ul>
@@ -182,11 +182,11 @@
             </div>
             <div class="cart">
               <div class="red_line3">
-                <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/redLine.png" alt="">
+                <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/redLine.png" alt="">
               </div>
               <div class="cart_wrapper">
                 <div class="img">
-                  <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/card3.png" alt="card1">
+                  <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/card3.png" alt="card1">
                 </div>
                 <p class="name">
                   Олександра Корнюк
@@ -196,15 +196,15 @@
                 </p>
                 <ul class="contact_card">
                   <li class="tel">
-                    <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/telsmall.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/telsmall.png" alt="">
                     <a href="tel:+38 (095) 454-44-56">+38 (095) 454-44-56</a>
                   </li>
                   <li class="skype">
-                    <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/ant-design_skype-outlined.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/ant-design_skype-outlined.png" alt="">
                     <a href="skype:olexander.lornyk">olexander.lornyk</a>
                   </li>
                   <li class="mail">
-                    <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/mailsmall.png" alt="">
+                    <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/mailsmall.png" alt="">
                     <a href="mailto:olexander.lornyk@gmail.com">olexander.lornyk<br>@gmail.com</a>
                   </li>
                 </ul>
@@ -218,9 +218,9 @@
   <div class="bottom_step">
     <div class="container_british">
       <h4>
-        <img src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/Vector101.png" alt="" class="lineHorizontal">
+        <img src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/Vector101.png" alt="" class="lineHorizontal">
         Інформація для візиту на склад
-        <img class="line" src="https://britishsecond.com.ua/wp-content/themes/second-hand/assets/images/Vector101.png" alt="">
+        <img class="line" src="<?= SERVER_URL ?>style/img/themes/second-hand/assets/images/Vector101.png" alt="">
       </h4>
     </div>
   </div>

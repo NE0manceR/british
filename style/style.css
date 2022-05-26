@@ -166,3 +166,11 @@ textarea.contact-modal__input {
 .title {
 	margin-bottom: 20px;
 }
+
+.swal2-styled.swal2-confirm {
+	background-color: rgb(223, 4, 42) !important;
+}
+
+.swal2-styled.swal2-confirm:focus {
+	box-shadow: 0 0 0 3px rgba(233, 4, 42, 0.7) !important;
+}

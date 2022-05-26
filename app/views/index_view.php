@@ -1149,7 +1149,7 @@ $data = $this->load->function_in_alias('team', '__get_PageData');
 							<div class="swiper-slide">
 								<div class="cart">
 									<div class="cart_wrapper">
-										<img src="<?= IMG_PATH, $value->images[0]->path ?>" alt="photo">
+										<img src="<?= IMG_PATH, !empty($value->images) ? $value->images[0]->path : '' ?>" alt="photo">
 										<div class="text brd">
 											<div class="cart__name">
 												<?= $value->title ?>
@@ -1158,7 +1158,7 @@ $data = $this->load->function_in_alias('team', '__get_PageData');
 												<?= $value->value ?>
 											</div>
 											<div class="cart__desc">
-												<?= $value->images[0]->title ?>
+												<?= !empty($value->images) ? $value->images[0]->title : '' ?>
 											</div>
 										</div>
 									</div>
