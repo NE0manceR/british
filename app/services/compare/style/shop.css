@@ -6,8 +6,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 50px 0 100px;
 }
+
 .groups > figure.empty { height: 0 !important; min-height: 0 }
 .groups > figure {
 	width: calc(33% - 10px);

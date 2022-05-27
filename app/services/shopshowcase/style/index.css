@@ -6,7 +6,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	height: calc(100vh - 132px);
+	/*height: calc(100vh - 132px);*/
 }
 
 .groups>figure.empty {

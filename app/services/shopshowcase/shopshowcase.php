@@ -210,7 +210,7 @@ class shopshowcase extends Controller {
 				$this->video->setVideosToText($videos);
 			}
 			
-			if($_SESSION['option']->useGroups)
+			if($_SESSION['option']->useGroups && false)
 			{
 				if($groups = $this->shop_model->getGroups(-1))
 					$this->load->page_view('index_view', array('catalogAllGroups' => $groups));
@@ -232,6 +232,7 @@ class shopshowcase extends Controller {
 			}
 			else
 			{
+				$filters = $filter_minMaxPrices = false;
 				if($products = $this->shop_model->getProducts())
 				{
 					$filters = $this->shop_model->getOptionsToGroup();

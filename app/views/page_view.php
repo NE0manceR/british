@@ -352,7 +352,7 @@
 	<!-- <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://britishsecond.localhost/wp-includes/wlwmanifest.xml" /> -->
 	<!-- <link rel="alternate" type="application/json+oembed" href="=<?= SERVER_URL ?>style/wp_js/embed.json" /> -->
 	<!-- <link rel="alternate" type="text/xml+oembed" href="<?= SERVER_URL ?>style/wp_js/embed2.json" /> -->
-	<link rel="stylesheet" href="<?= SERVER_URL ?>style/style.css?v1">
+	<link rel="stylesheet" href="<?= SERVER_URL ?>style/style.css?v3">
 </head>
 
 <body>
