@@ -7617,6 +7617,7 @@ body .btn-custom:hover svg {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
   height: 100%;
   padding-bottom: 20px;
 }
