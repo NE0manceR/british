@@ -725,29 +725,25 @@ $data = $this->load->function_in_alias('team_syprovid', '__get_PageData');
         </h1>
       </div>
       <div class="col-12 ">
-        <div class="swiper mySwiper4">
-          <div class="swiper-wrapper">
-            <?php foreach ($data->section as $value) { ?>
-              <div class="swiper-slide">
-                <div class="cart">
-                  <div class="cart_wrapper">
-                    <img src="<?= IMG_PATH, $value->images[0]->path ?>" alt="photo">
-                    <div class="text brd">
-                      <div class="cart__name">
-                        <?= $value->title ?>
-                      </div>
-                      <div class="cart__position">
-                        <?= $value->value ?>
-                      </div>
-                      <div class="cart__desc">
-                        <?= $value->images[0]->title ?>
-                      </div>
-                    </div>
+        <div class="card_list1" style="height: max-content">
+			    <?php foreach ($data->section as $cart) { ?>
+            <div class="cart">
+              <div class="cart_wrapper">
+                <img src="<?= IMG_PATH . $cart->images[0]->path ?>" alt="$cart->images[0]->title?>">
+                <div class="text brd">
+                  <div class="h7 mb-2">
+								    <?= $cart->title ?>
+                  </div>
+                  <div>
+								    <?= $cart->value ?>
+                  </div>
+                  <div class="mt-2">
+								    <?= $cart->images[0]->title ?>
                   </div>
                 </div>
               </div>
-            <?php } ?>
-          </div>
+            </div>
+			    <?php } ?>
         </div>
       </div>
     </div>

@@ -1,18 +1,7 @@
-<style>
-  .swiper {
-    margin-bottom: 36px;
-  }
+<?php
+$data = $this->load->function_in_alias('feedback-about-sort', '__get_PageData');
+?>
 
-  .swiper-slide {
-    height: 300px;
-    overflow: hidden;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #DF042E;
-  }
-</style>
 <div class="banner sortBG">
   <div class="bannerContainer">
     <div class="row">
@@ -23,8 +12,6 @@
         <div>
           партіями від 15-100 кг без завдатку
           з доставкою до дверей нашим транспортом
-
-
         </div>
       </div>
       <div class="col-lg-5 col-0"></div>
@@ -42,9 +29,13 @@
 <div class="season">
   <div class="seasonContainer">
     <ul id="menu-%d0%bc%d0%b5%d0%bd%d1%8e-%d0%ba%d0%b0%d1%82%d0%b5%d0%b3%d0%be%d1%80i%d0%b9" class="season-menu">
-      <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/zyma/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/snow.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="31" height="30" src="<?= SERVER_URL ?>style/img/uploads/2022/02/winterred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -31px;"></span><span class="menu-image-title-after menu-image-title">Зима</span></a></li>
+      <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/zyma/" class="menu-image-title-after menu-image-hovered">
+          <span class="menu-image-hover-wrapper">
+            <img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/snow.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="31" height="30" src="<?= SERVER_URL ?>style/img/uploads/2022/02/winterred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -31px;"></span><span class="menu-image-title-after menu-image-title">Зима</span></a>
+      </li>
       <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/vesna/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/vesna.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/springred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;"></span><span class="menu-image-title-after menu-image-title">Весна</span></a></li>
-      <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/lito/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/lito.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/02/summerred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -29px;"></span><span class="menu-image-title-after menu-image-title">Літо</span></a></li>
+      <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/lito/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/01/lito.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="29" height="29" src="<?= SERVER_URL ?>style/img/uploads/2022/02/summerred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -29px;"></span><span class="menu-image-title-after menu-image-title">Літо</span></a>
+      </li>
       <li class="menu-item menu-item-type-custom"><a href="<?= SITE_URL ?>products/osin/" class="menu-image-title-after menu-image-hovered"><span class="menu-image-hover-wrapper"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/01/osen.png" class="menu-image menu-image-title-after" alt="" loading="lazy"><img width="26" height="26" src="<?= SERVER_URL ?>style/img/uploads/2022/02/autumnred.png" class="hovered-image menu-image-title-after" alt="" loading="lazy" style="margin-left: -26px;"></span><span class="menu-image-title-after menu-image-title">Осінь</span></a></li>
     </ul>
   </div>
@@ -57,12 +48,14 @@
 
         </div>
         <div class="fw-bold">
-          Сортований секонд-хенд може стати або чудовим вибором для збільшення прибутковості вашого магазину, або стати статтею витрат і неліквідними залишками на складі.
+          Сортований секонд-хенд може стати або чудовим вибором для збільшення прибутковості вашого магазину, або стати
+          статтею витрат і неліквідними залишками на складі.
         </div>
       </div>
       <div class="col-lg-4 col-md-8 col-sm-10 col-12">
         <div class="text">
-          У спілкуванні з нашими клієнтами, як діючими, так і тими, що приходять вперше, ми виявили декілька розповсюджених проблем, пов’язаних з сортовкою:
+          У спілкуванні з нашими клієнтами, як діючими, так і тими, що приходять вперше, ми виявили декілька
+          розповсюджених проблем, пов’язаних з сортовкою:
         </div>
       </div>
       <div class="col-lg-8 col-12">
@@ -139,12 +132,15 @@
 
               </div>
               <div class="text mb-sm-3 mb-1">
-                Ми - єдина компанія в Україні, яка не вимагає жодного авансового платежу, незалежно від розміру партії та способу доставки. Тим самим ви страхуєте себе від неякісного товару та можете оглянути його безпосередньо на місці.
+                Ми - єдина компанія в Україні, яка не вимагає жодного авансового платежу, незалежно від розміру партії
+                та способу доставки. Тим самим ви страхуєте себе від неякісного товару та можете оглянути його
+                безпосередньо на місці.
 
 
               </div>
               <div class="text ">
-                Ми зацікавлені, щоб товар підійшов вам, тому працюємо лише з перевіреними фабриками та ретельно перевіряємо якість.
+                Ми зацікавлені, щоб товар підійшов вам, тому працюємо лише з перевіреними фабриками та ретельно
+                перевіряємо якість.
               </div>
               <div class="abs3"></div>
             </div>
@@ -163,12 +159,15 @@
 
         </div>
         <div class="text mb-3 ">
-          Ми - єдина компанія в Україні, яка не вимагає жодного авансового платежу, незалежно від розміру партії та способу доставки. Тим самим ви страхуєте себе від неякісного товару та можете оглянути його безпосередньо на місці.
+          Ми - єдина компанія в Україні, яка не вимагає жодного авансового платежу, незалежно від розміру партії та
+          способу доставки. Тим самим ви страхуєте себе від неякісного товару та можете оглянути його безпосередньо на
+          місці.
 
 
         </div>
         <div class="text ">
-          Ми зацікавлені, щоб товар підійшов вам, тому працюємо лише з перевіреними фабриками та ретельно перевіряємо якість.
+          Ми зацікавлені, щоб товар підійшов вам, тому працюємо лише з перевіреними фабриками та ретельно перевіряємо
+          якість.
         </div>
       </div>
     </div>
@@ -196,7 +195,8 @@
         </div>
         <div class="text">
           <div class="list">
-            Нашим власним транспортом під двері магазину (діє в межах Західної та Центральної України, Східна, Північна, Південна Україна по індивідуальному замовленню)
+            Нашим власним транспортом під двері магазину (діє в межах Західної та Центральної України, Східна, Північна,
+            Південна Україна по індивідуальному замовленню)
 
 
           </div>
@@ -254,7 +254,8 @@
                   2
                 </div>
                 <div class="list">
-                  Нашим власним транспортом під двері магазину (діє в межах Західної та Центральної України, Східна Україна по індивідуальному замовленню)
+                  Нашим власним транспортом під двері магазину (діє в межах Західної та Центральної України, Східна
+                  Україна по індивідуальному замовленню)
 
                 </div>
 
@@ -297,7 +298,9 @@
 
               </div>
               <div class="text mb-sm-3 mb-1">
-                Хоча British Second веде прямий імпорт з Європи і співпрацює лише з ретельно відібраними фабриками, ми запровадили відеозйомки в Viber-спільноті, після яких ви чітко розумієте який товар, в якій кількості і якості замовляєте.
+                Хоча British Second веде прямий імпорт з Європи і співпрацює лише з ретельно відібраними фабриками, ми
+                запровадили відеозйомки в Viber-спільноті, після яких ви чітко розумієте який товар, в якій кількості і
+                якості замовляєте.
               </div>
               <a href="https://invite.viber.com/?g2=AQBtOSft8tJLdUqEkAvbpIxJTKstbE1n6B%2BCcS31fCm%2FkibZJwCaiKbk3M%2F1BKxw" target="_blank" class="btn btn-custom">
                 Підписатися
@@ -322,7 +325,9 @@
 
         </div>
         <div class="text mb-3 ">
-          Хоча British Second веде прямий імпорт з Європи і співпрацює лише з ретельно відібраними фабриками, ми запровадили відеозйомки в Viber-спільноті, після яких ви чітко розумієте який товар, в якій кількості і якості замовляєте.
+          Хоча British Second веде прямий імпорт з Європи і співпрацює лише з ретельно відібраними фабриками, ми
+          запровадили відеозйомки в Viber-спільноті, після яких ви чітко розумієте який товар, в якій кількості і якості
+          замовляєте.
         </div>
         <a href="https://invite.viber.com/?g2=AQBtOSft8tJLdUqEkAvbpIxJTKstbE1n6B%2BCcS31fCm%2FkibZJwCaiKbk3M%2F1BKxw" target="_blank" class="btn btn-custom">
           Підписатися
@@ -456,7 +461,8 @@
                 </defs>
               </svg>
               <div class="text">
-                Власникам спеціалізованих магазинів, що торгують товарами певних категорій (взуття та галантерея, дитячий чи робочий одяг)
+                Власникам спеціалізованих магазинів, що торгують товарами певних категорій (взуття та галантерея,
+                дитячий чи робочий одяг)
               </div>
             </div>
           </div>
@@ -483,7 +489,8 @@
 
 
               <div class="text">
-                Тим, хто хоче розпочати бізнес на секонд-хенді, але боїться вкладати гроші в товар, який може не продатись
+                Тим, хто хоче розпочати бізнес на секонд-хенді, але боїться вкладати гроші в товар, який може не
+                продатись
               </div>
             </div>
           </div>
@@ -501,7 +508,8 @@
               </svg>
 
               <div class="text">
-                Власникам невеликих магазинів, які хочуть докупити ті речі, які потрібно в даний момент, в невеликій кількості.
+                Власникам невеликих магазинів, які хочуть докупити ті речі, які потрібно в даний момент, в невеликій
+                кількості.
               </div>
             </div>
           </div>
@@ -527,7 +535,8 @@
               </svg>
 
               <div class="text">
-                Власникам магазину чи мережі, які працюють з преміум-товаром чи товарами Cash4Clothes ("магазинна збірка", чи D2D ("домашня збірка")
+                Власникам магазину чи мережі, які працюють з преміум-товаром чи товарами Cash4Clothes ("магазинна
+                збірка", чи D2D ("домашня збірка")
               </div>
             </div>
           </div>
@@ -543,103 +552,52 @@
       <div class="col-xl-6 col-lg-7 col-12 text-sm-start text-center ">
         <h1 class="text-dark d-sm-block d-none hLine ">відеорозпаковки</h1>
         <h1 class="text-dark d-block d-sm-none">відео-розпаковки</h1>
-        <div> останніх надходжень </div>
+        <div> останніх надходжень</div>
       </div>
-      <div class="col-12 d-lg-block d-none">
-      <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-12 d-lg-block d-none" style="height: max-content;">
+        <div class="customCarousel" id="customCarousel1">
+          <div class="button">
+            <div class="pred-video" id='pred2'>
+              <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M47.5 9H2M2 9L10 1M2 9L10 17" stroke-width="2" />
+              </svg>
+
             </div>
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="next-video active" id='next2'>
+              <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 9H46M46 9L38 1M46 9L38 17" stroke-width="2" />
+              </svg>
+
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+
+          <div class="customCarouselWrapper">
+            <?php foreach ($_SESSION['alias']->videos as $index => $video) { ?>
+              <div class="customCarouselItem <?= $index == 0 ? 'active order-first' : 'order-' . ($index + 1) ?>" <?= $index == 0 ? 'id="1item0"' : 'id="1item' . $index . '"' ?>>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?= $video->link ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <div class="videoTitle">ХАЛАТИ</div> -->
+              </div>
+            <?php } ?>
+          </div>
         </div>
       </div>
-      <div class="col-12 d-lg-none d-block">
-        <div class="video_list mb-3 slick-initialized slick-slider">
-          <div class="slick-list draggable">
-            <div class="slick-track" style="opacity: 1; width: 0px;">
-              <div class="video slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
-                <div class="video_wrapper">
-                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                  <div class="videoTitleFull">ХАЛАТИ</div>
-                </div>
-              </div>
-              <div class="video slick-slide" data-slick-index="1" aria-hidden="true" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1">
-                <div class="video_wrapper">
-                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R3OuZn6kUuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                  <div class="videoTitleFull">ВЗУТТЯ</div>
-                </div>
-              </div>
-              <div class="video slick-slide" data-slick-index="2" aria-hidden="true" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1">
-                <div class="video_wrapper">
-                  <iframe iframe="" width="100%" height="100%" src="https://www.youtube.com/embed/91GtfkzruxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                  <div class="videoTitleFull">ЖІНОЧІЙ МІКС</div>
-                </div>
+      <div class="col-12 d-lg-none d-block" style="height: max-content;">
+        <div class="video_list mb-3">
+          <?php foreach ($_SESSION['alias']->videos as $video) { ?>
+            <div class="video">
+              <div class="video_wrapper">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?= $video->link; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
-          </div>
-
-
+          <?php } ?>
         </div>
-        <div class="video_nav slick-initialized slick-slider">
-
-          <div class="slick-list draggable" style="padding: 0px 50px;">
-            <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(100px, 0px, 0px);">
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                <div class="videoTitle">ХАЛАТИ</div>
-              </div>
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R3OuZn6kUuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                <div class="videoTitle">ВЗУТТЯ</div>
-              </div>
-              <div class="nav__item slick-slide slick-cloned slick-active" data-slick-index="-1" id="" aria-hidden="false" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/91GtfkzruxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                <div class="videoTitle">ЖІНОЧІЙ МІКС</div>
-              </div>
-              <div class="nav__item slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                <div class="videoTitle">ХАЛАТИ</div>
-              </div>
-              <div class="nav__item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R3OuZn6kUuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                <div class="videoTitle">ВЗУТТЯ</div>
-              </div>
-              <div class="nav__item slick-slide" data-slick-index="2" aria-hidden="true" tabindex="0" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/91GtfkzruxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                <div class="videoTitle">ЖІНОЧІЙ МІКС</div>
-              </div>
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                <div class="videoTitle">ХАЛАТИ</div>
-              </div>
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R3OuZn6kUuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                <div class="videoTitle">ВЗУТТЯ</div>
-              </div>
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/91GtfkzruxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                <div class="videoTitle">ЖІНОЧІЙ МІКС</div>
-              </div>
+        <div class="video_nav">
+          <?php foreach ($_SESSION['alias']->videos as $video) { ?>
+            <div class="nav__item">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?= $video->link ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-          </div>
 
-
-
+          <?php } ?>
         </div>
       </div>
     </div>
@@ -653,7 +611,8 @@
       </div>
       <div class="col-6">
         <div class="text">
-          Вживаний одяг, повинен мати супровідну документацію - на кожну партію секонд-хенду країна, з якої імпортується продукція, видає документ про проведення дезінфекції, а також інші сертифікати.
+          Вживаний одяг, повинен мати супровідну документацію - на кожну партію секонд-хенду країна, з якої імпортується
+          продукція, видає документ про проведення дезінфекції, а також інші сертифікати.
         </div>
         <div class="text">
           Ці документи перевізник, який транспортує товар, повинен пред’явити під час проходження митного контролю.
@@ -663,7 +622,8 @@
 
         </div>
         <div class="text">
-          Ваші покупці задля власної безпеки мають право ознайомитися з сертифікатами, тому ми надаємо нашим клієнтам все необхідне для легального та безпечного бізнесу
+          Ваші покупці задля власної безпеки мають право ознайомитися з сертифікатами, тому ми надаємо нашим клієнтам
+          все необхідне для легального та безпечного бізнесу
 
         </div>
       </div>
@@ -851,140 +811,60 @@
     </div>
   </div>
 </div>
-<div class="commentClient mt-4">
+<div class="commentClient mt-4" style="height: max-content;">
   <div class="commentClientContainer">
     <div class="row">
       <div class="col-xl-7 col-lg-8 offset-lg-1  col-12">
         <h1 class="text-dark rLine">Ось, що кажуть постійні клієнти про нашу сортовку</h1>
       </div>
-      <div class="col-12 d-lg-block d-none">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-12 d-lg-block d-none" style="height: max-content;">
+
+        <div class="customCarousel" id="customCarousel">
+          <div class="button">
+            <div class="pred-video" id='pred1'>
+              <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M47.5 9H2M2 9L10 1M2 9L10 17" stroke-width="2" />
+              </svg>
+
             </div>
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="swiper-slide">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="next-video active" id='next1'>
+              <svg width="48" height="18" viewBox="0 0 48 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 9H46M46 9L38 1M46 9L38 17" stroke-width="2" />
+              </svg>
+
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="customCarouselWrapper">
+            <?php foreach ($_SESSION['alias']->videos as $index => $video) { ?>
+              <div class="customCarouselItem <?= $index == 0 ? 'active order-first' : 'order-' . ($index + 1) ?>" <?= $index == 0 ? 'id="item0"' : 'id="item' . $index . '"' ?>>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?= $video->link ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <div class="videoTitle">ХАЛАТИ</div> -->
+              </div>
+            <?php } ?>
+          </div>
         </div>
       </div>
-      <div class="col-12 d-lg-none d-block">
-        <div class="video_list1 mb-3 slick-initialized slick-slider">
-          <div class="slick-list draggable">
-            <div class="slick-track" style="opacity: 1; width: 0px;">
-              <div class="video slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
-                <div class="video_wrapper">
-                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                </div>
-              </div>
-              <div class="video slick-slide" data-slick-index="1" aria-hidden="true" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1">
-                <div class="video_wrapper">
-                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R3OuZn6kUuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                </div>
-              </div>
-              <div class="video slick-slide" data-slick-index="2" aria-hidden="true" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1">
-                <div class="video_wrapper">
-                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/91GtfkzruxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                </div>
+      <div class="col-12 d-lg-none d-block" style="height: max-content;">
+        <div class="video_list1 mb-3">
+          <?php foreach ($data->videos as $video) { ?>
+            <div class="video">
+              <div class="video_wrapper">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?= $video->link?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
-          </div>
-
-
+          <?php } ?>
         </div>
-        <div class="video_nav1 slick-initialized slick-slider">
+        <div class="video_nav1">
+          <?php foreach ($data->videos as $video) { ?>
 
-          <div class="slick-list draggable" style="padding: 0px 50px;">
-            <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(100px, 0px, 0px);">
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-              </div>
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R3OuZn6kUuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-              </div>
-              <div class="nav__item slick-slide slick-cloned slick-active" data-slick-index="-1" id="" aria-hidden="false" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/91GtfkzruxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-              </div>
-              <div class="nav__item slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-              </div>
-              <div class="nav__item slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R3OuZn6kUuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-              </div>
-              <div class="nav__item slick-slide" data-slick-index="2" aria-hidden="true" tabindex="0" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/91GtfkzruxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-              </div>
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-              </div>
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R3OuZn6kUuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-              </div>
-              <div class="nav__item slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1" style="width: 0px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/91GtfkzruxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-              </div>
+            <div class="nav__item">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?= $video->link?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-          </div>
+      
+          <?php } ?>
+
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<script src="<?= SERVER_URL ?>js/swiper-bundle.min.js"></script>
-
-<script>
-  var swiper3 = new Swiper(".mySwiper", {
-    slidesPerView: 3.5,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      990: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-      },
-    }
-  });
-</script>
