@@ -88,7 +88,7 @@ class shopshowcase extends Controller {
 				$this->setProductPrice($product);
 				if(!empty($product->similarProducts))
 				{
-					if(!empty($_SESSION['option']->similarFolders)) {
+					if(is_array($product->similarProducts)) {
 						foreach ($product->similarProducts as $folder => &$similarProducts) {
 							$this->setProductsPrice($similarProducts);
 						}
