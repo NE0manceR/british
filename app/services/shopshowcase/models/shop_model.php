@@ -212,7 +212,7 @@ class shop_model
 							$filterOk = true;
 							if (count($_GET) > 1) {
 								$filterOk = false;
-								if (count($_GET) == 2 && isset($_GET['request']) && isset($_GET['page']))
+								if (count($_GET) == 2 && (isset($_GET['request']) && isset($_GET['page']) && isset($_GET['sale']) && isset($_GET['availability'])))
 									$filterOk = true;
 							}
 							if ($filterOk && isset($_SESSION['option']->paginator_per_page) && $_SESSION['option']->paginator_per_page > 0) {
@@ -251,6 +251,38 @@ class shop_model
 			}
 		} elseif ($noInclude > 0)
 			$where['id'] = '!' . $noInclude;
+
+		if (isset($_GET['sale']) && $_GET['sale'] == 1) {
+			$time = time();
+			$where['&'] = "p.old_price > p.price OR (p.promo > 0 AND pm.status = 1 AND pm.from < {$time} AND pm.to >= {$time})";
+		}
+		if (isset($_GET['price_min']) && is_numeric($_GET['price_min']) && $_GET['price_min'] >= 1) {
+			$price_min = $this->data->get('price_min');
+			// if(isset($_SESSION['option']->currency) &&  $_SESSION['option']->currency)
+			//       	$price_min /= $_SESSION['option']->currency;
+			$where['price'] = '>=' . $price_min;
+		}
+		if (isset($_GET['price_max']) && is_numeric($_GET['price_max']) && $_GET['price_max'] > 1) {
+			$price_max = $this->data->get('price_max');
+			// if(isset($_SESSION['option']->currency) && $_SESSION['option']->currency)
+			//       	$price_max /= $_SESSION['option']->currency;
+			$where['price'] = '<=' . $price_max;
+		}
+
+		if (!empty($_GET['availability']) && is_numeric($_GET['availability'])) {
+			if ($_SESSION['option']->useAvailability) {
+				$where['availability'] = '>0';
+				if (empty($where['price']))
+					$where['price'] = '>0';
+			} else
+				$where['availability'] = $this->data->get('availability');
+		}
+
+		if (!empty($_GET['author_add']) && is_numeric($_GET['author_add']) && $_GET['author_add'] > 0)
+			$where['author_add'] = $_GET['author_add'];
+
+		if ($active > 0 && $_SESSION['option']->useGroups > 0 && $_SESSION['option']->ProductMultiGroup == 0 && isset($where['group']))
+			$where['active'] = 1;
 
 		if (count($_GET) > 1 || empty($_GET['request'])) {
 			if ($_SESSION['option']->ProductUseArticle > 0 && !empty($_GET['article']))
@@ -294,7 +326,9 @@ class shop_model
 			}
 
 			if (empty($where['id'])) {
-				$list = $this->db->select($this->table('_products'), 'id', $where)->get('array');
+				$list = $this->db->select($this->table('_products') . ' as p', 'id', $where)
+													->join($this->table('_promo') . ' as pm', '', '#p.promo')
+													->get('array');
 				if (empty($list))
 					return false;
 
@@ -350,39 +384,9 @@ class shop_model
 				}
 			}
 		}
-		if (isset($_GET['sale']) && $_GET['sale'] == 1) {
-			$where['#p.promo'] = '>0';
-			$where['#p.old_price'] = '> p.price';
-		}
-		if (isset($_GET['price_min']) && is_numeric($_GET['price_min']) && $_GET['price_min'] >= 1) {
-			$price_min = $this->data->get('price_min');
-			// if(isset($_SESSION['option']->currency) &&  $_SESSION['option']->currency)
-			//       	$price_min /= $_SESSION['option']->currency;
-			$where['#p.price'] = '>=' . $price_min;
-		}
-		if (isset($_GET['price_max']) && is_numeric($_GET['price_max']) && $_GET['price_max'] > 1) {
-			$price_max = $this->data->get('price_max');
-			// if(isset($_SESSION['option']->currency) && $_SESSION['option']->currency)
-			//       	$price_max /= $_SESSION['option']->currency;
-			$where['+#p.price'] = '<=' . $price_max;
-		}
-
-		if (!empty($_GET['availability']) && is_numeric($_GET['availability'])) {
-			if ($_SESSION['option']->useAvailability) {
-				$where['#p.availability'] = '>0';
-				if (empty($where['#p.price']))
-					$where['#p.price'] = '>0';
-			} else
-				$where['#p.availability'] = $this->data->get('availability');
-		}
-
-		if (!empty($_GET['author_add']) && is_numeric($_GET['author_add']) && $_GET['author_add'] > 0)
-			$where['#p.author_add'] = $_GET['author_add'];
-
-		if ($active > 0 && $_SESSION['option']->useGroups > 0 && $_SESSION['option']->ProductMultiGroup == 0 && isset($where['group']))
-			$where['#g.active'] = 1;
-
-		$this->db->select($this->table('_products') . ' as p', '*', $where);
+		
+		$this->db->select($this->table('_products') . ' as p', '*', $where)
+						->join($this->table('_promo') . ' as pm', 'from as promo_from, to as promo_to, percent', '#p.promo');
 
 		if ($_SESSION['option']->useGroups && $_SESSION['option']->ProductMultiGroup && !is_array($Group))
 			$this->db->join($this->table('_product_group') . ' as pg', 'id as position_id, position, active', array('group' => $Group, 'product' => '#p.id'));
