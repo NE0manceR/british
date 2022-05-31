@@ -74,16 +74,13 @@ textarea.contact-modal__input {
 	font-weight: 600;
 }
 
-@media (max-width: 600px) {
-	.contact-modal {
-		width: 90%;
-		padding: 30px;
-	}
-
-	.contact-modal__input {
-		width: 100%;
+@media (max-width: 1440px) {
+	.blog-container {
+		padding: 30px 16px;
 	}
 }
+
+
 
 .cart_wrapper img {
 	width: 100%;
@@ -160,7 +157,35 @@ textarea.contact-modal__input {
 }
 
 .blog-container {
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	gap: 50px;
+
 	margin-bottom: 36px;
+}
+
+.img-wrap {
+	width: 50%;
+	border-radius: 30px;
+	overflow: hidden;
+	height: 500px;
+}
+
+.img-wrap img {
+	height: 100%;
+	width: 100%;
+	transition: 2s;
+
+	object-fit: cover;
+}
+
+.img-wrap:hover img {
+	transform: scale(1.2, 1.2);
+}
+
+.card_right {
+	width: 50%;
 }
 
 .title {
@@ -173,4 +198,118 @@ textarea.contact-modal__input {
 
 .swal2-styled.swal2-confirm:focus {
 	box-shadow: 0 0 0 3px rgba(233, 4, 42, 0.7) !important;
+}
+
+.shop-container {
+	max-width: 1390;
+	margin: 0 auto;
+	display: flex;
+	gap: 16px;
+}
+
+.card_photo {
+	max-height: 300px;
+}
+
+.filter-wrap {
+	width: 250px;
+	flex-shrink: 0;
+}
+
+.filter-label {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: #042065;
+	font-size: 16px;
+}
+
+.filter-input {
+	width: 30px;
+	height: 30px;
+	border-radius: 6px;
+	border: 1px solid red;
+}
+
+.filter-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #042065;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 16px 4px;
+	border-bottom: 2px solid #EB627A;
+	border-top: 2px solid #EB627A;
+	cursor: pointer;
+}
+
+.filter-title img {
+	transition: 0.4s;
+	transform: rotate(-90deg);
+}
+
+.filter-title-no-border {
+	border-bottom-color: transparent;
+}
+
+.filter-title-no-border img {
+	transform: rotate(0deg);
+}
+
+.filter-list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 12px 0;
+}
+
+.filter-title-icon {
+	width: 12px;
+	height: 12px;
+}
+
+@media (max-width: 1440px) {
+	.shop-container {
+		padding: 30px 16px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.blog-container {
+		flex-direction: column;
+	}
+
+	.img-wrap,
+	.card_right {
+		width: 100%;
+	}
+}
+
+@media (max-width: 760px) {
+	.shop-container {
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	.filter-wrap {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.contact-modal {
+		width: 90%;
+		padding: 30px;
+	}
+
+	.contact-modal__input {
+		width: 100%;
+	}
+}
+
+.contact_card img {
+	width: 20px;
+	height: 20px;
+	object-fit: contain;
 }

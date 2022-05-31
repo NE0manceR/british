@@ -15,6 +15,8 @@
 	<?php if (!empty($_SESSION['alias']->image)) { ?>
 		<meta property="og:image" content="<?= IMG_PATH . $_SESSION['alias']->image ?>" />
 	<?php } ?>
+<link rel="stylesheet" href="<?= SERVER_URL ?>style/scss/library/library.min.scss" />
+
 
 	<?= html_entity_decode($_SESSION['option']->global_MetaTags, ENT_QUOTES) ?>
 	<?= html_entity_decode($_SESSION['alias']->meta, ENT_QUOTES) ?>

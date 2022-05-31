@@ -327,8 +327,8 @@ class shop_model
 
 			if (empty($where['id'])) {
 				$list = $this->db->select($this->table('_products') . ' as p', 'id', $where)
-													->join($this->table('_promo') . ' as pm', '', '#p.promo')
-													->get('array');
+					->join($this->table('_promo') . ' as pm', '', '#p.promo')
+					->get('array');
 				if (empty($list))
 					return false;
 
@@ -384,9 +384,9 @@ class shop_model
 				}
 			}
 		}
-		
+
 		$this->db->select($this->table('_products') . ' as p', '*', $where)
-						->join($this->table('_promo') . ' as pm', 'from as promo_from, to as promo_to, percent', '#p.promo');
+			->join($this->table('_promo') . ' as pm', 'from as promo_from, to as promo_to, percent', '#p.promo');
 
 		if ($_SESSION['option']->useGroups && $_SESSION['option']->ProductMultiGroup && !is_array($Group))
 			$this->db->join($this->table('_product_group') . ' as pg', 'id as position_id, position, active', array('group' => $Group, 'product' => '#p.id'));

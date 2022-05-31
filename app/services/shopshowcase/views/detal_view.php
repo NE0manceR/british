@@ -122,7 +122,7 @@
                         <?php } ?>
                     </div>
                 </div>
-                <?php if(!empty($_SESSION['alias']->videos)) {?>
+                <?php if (!empty($_SESSION['alias']->videos)) { ?>
                     <div class="video_logo">
                         <div class="swiper  mySwiper mySwiper4">
                             <div class="swiper-wrapper">
@@ -177,11 +177,13 @@
                 <div class="video_logo">
                     <div class="swiper  mySwiper mySwiper4">
                         <div class="swiper-wrapper">
-                            <?php foreach ($_SESSION['alias']->videos as $video) { ?>
-                                <div class="swiper-slide">
-                                    <iframe src="https://www.youtube.com/embed/<?= $video->link ?>" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            <?php } ?>
+                            <?php if ($_SESSION['alias']->videos) {
+                                foreach ($_SESSION['alias']->videos as $video) { ?>
+                                    <div class="swiper-slide">
+                                        <iframe src="https://www.youtube.com/embed/<?= $video->link ?>" title=" YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                            <?php }
+                            } ?>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -393,8 +395,8 @@
             prevEl: ".swiper-button-prev",
         },
         autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
+            delay: 4000,
+            disableOnInteraction: false,
         },
 
     });

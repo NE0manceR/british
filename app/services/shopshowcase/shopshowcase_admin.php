@@ -1983,10 +1983,15 @@ class shopshowcase_admin extends Controller {
     					}
     				}
     				else
-    					foreach($product->similarProducts as $similarProduct) {
-    						$this->db->cache_delete('product'.DIRSEP.$this->db->getCacheContentKey('product_', $similarProduct->id, 2));
+						{
+    					foreach($product->similarProducts as $similarProductFolder) {
+								foreach ($similarProductFolder as $similarProduct)
+								{
+									$this->db->cache_delete('product'.DIRSEP.$this->db->getCacheContentKey('product_', $similarProduct->id, 2));
+								}
 							$this->db->cache_delete('product'.DIRSEP.$this->db->getCacheContentKey('product_', $similarProduct->id, 2)."-all_info");
     					}
+						}
     			}
     		}
     		else

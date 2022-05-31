@@ -1,4 +1,3 @@
-
 <style>
 	.swiper-wrap {
 		width: 100%;
@@ -21,28 +20,17 @@
 	</div>
 </div>
 <div class="card_content  blog-container">
-	<div class="item_container">
-		<div class="content_wrapper">
-			<div class="card_left ">
-				<!-- Swiper -->
-				<div class="swiper mySwiper swiper-wrap">
-					<div class="swiper-wrapper">
-						<?php foreach ($_SESSION['alias']->images as $img) { ?>
-							<div class="swiper-slide">
-								<img src="<?= IMG_PATH  . $img->path ?>" alt="<?= $img->title ?>" title="<?= $img->title ?>">
-
-							</div>
-						<?php } ?>
-					</div>
-				</div>
-			</div>
-			<div class="card_right">
-				<div class="info">
-					<p><?= $_SESSION['alias']->text ?></p>
-				</div>
-			</div>
+	<div class="img-wrap">
+		<!-- Swiper -->
+		<img src="<?= IMG_PATH  . $_SESSION['alias']->images[0]->path ?>" alt="img" title="<?= $_SESSION['alias']->name ?>">
+	</div>
+	<div class="card_right">
+		<div class="info">
+			<p><?= $_SESSION['alias']->text ?></p>
 		</div>
 	</div>
+</div>
+</div>
 </div>
 
 

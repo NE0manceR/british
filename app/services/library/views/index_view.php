@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <style>
 	html,
 	body {
@@ -15,17 +14,39 @@
 		padding: 0;
 	}
 
+	main {
+		background-color: white;
+	}
+
+	.swiper-pagination-bullet-active-main {
+		color: red;
+	}
+
 	.swiper {
 		width: 100%;
 		height: 100%;
 		margin-left: auto;
 		margin-right: auto;
+		padding-bottom: 30px;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev,
+	.swiper-button-next,
+	.swiper-button-prev {
+		top: 100%;
+	}
+
+	.swiper-horizontal>.swiper-pagination-bullets,
+	.swiper-pagination-bullets.swiper-pagination-horizontal,
+	.swiper-pagination-custom,
+	.swiper-pagination-fraction {
+		bottom: 0;
 	}
 
 	.swiper-slide {
 		text-align: center;
 		font-size: 18px;
-		background: #fff;
 		height: calc((100% - 30px) / 2) !important;
 
 		/* Center slide text vertically */
@@ -41,28 +62,11 @@
 		-ms-flex-align: center;
 		-webkit-align-items: center;
 		align-items: center;
+		background: transparent;
 	}
 </style>
 
-<div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-
-
-
-
+<link rel="stylesheet" href="<?= SERVER_URL ?>style/scss/blog/blog.min.css?3">
 
 <div class="title">
 	<div class="container_blog">
@@ -74,6 +78,67 @@
 		</div>
 	</div>
 </div>
+
+<section class="blog">
+	<article class="blog__main-article">
+		<div class="card">
+			<img src=<?= IMG_PATH . $articles[0]->photo ?> alt="<?= $articles[0]->name ?>">
+			<div class="card__text-wrap">
+				<span class="card__theme"><?= $articles[0]->group_name ?></span>
+				<span class="card__date"><?= date('Y-j-n   G:i:s', $articles[0]->date_add) ?></span>
+				<h4 class="card__title"><?= $articles[0]->name ?></h4>
+				<span class="card__text"><?= $articles[0]->text ?></span>
+				<a class="card__link" href="<?= $articles[0]->link ?>">Читати далі
+					<svg class="card__arrow" width="53" height="11" viewBox="0 0 53 11" fill="red" xmlns="http://www.w3.org/2000/svg">
+						<path fill="red" d="M0 5.5H51.5M51.5 5.5L46.5 0.5M51.5 5.5L46.5 10.5"></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</article>
+	<div class="blog__slider">
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<?php foreach ($articles as $index => $article) {
+					if ($index != 0) {
+				?>
+						<div class="swiper-slide">
+							<div class="card">
+								<img src="<?= IMG_PATH . $article->photo ?>" alt="<?= $article->name ?>">
+								<div class="card__text-wrap">
+									<span class="card__theme"><?= $article->group_name ?></span>
+									<h4 class="card__title"><?= $article->name ?></h4>
+									<a class="card__link" href="<?= SITE_URL . $article->link ?>">Читати далі
+										<svg class="card__arrow" width="53" height="11" viewBox="0 0 53 11" fill="red" xmlns="http://www.w3.org/2000/svg">
+											<path fill="red" d="M0 5.5H51.5M51.5 5.5L46.5 0.5M51.5 5.5L46.5 10.5"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+				<?php }
+				} ?>
+			</div>
+			<div class="swiper-pagination"></div>
+
+			<button class="carousel-control-prev swiperprev" type="button">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</button>
+			<button class="carousel-control-next swipenext" type="button">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			</button>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -181,9 +246,27 @@
 			rows: 2,
 		},
 		spaceBetween: 30,
+		navigation: {
+			nextEl: ".swipenext",
+			prevEl: ".swiperprev",
+		},
 		pagination: {
 			el: ".swiper-pagination",
-			clickable: true,
+			dynamicBullets: true,
+		},
+		autoplay: {
+			delay: 3500,
+			disableOnInteraction: false,
+		},
+
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+
+			1036: {
+				slidesPerView: 2,
+			},
 		},
 	});
 </script>

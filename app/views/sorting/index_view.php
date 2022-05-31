@@ -392,7 +392,7 @@ $data = $this->load->function_in_alias('feedback-about-sort', '__get_PageData');
         <h3 class="text-center line">Також у нас постійні акції та товари спеціального призначення</h3>
       </div>
       <div class="wow bounceInRight col-lg-4 col-sm-6 col-12" style="visibility: hidden; animation-name: none;">
-        <a href="#" class="item1">
+        <a href="<?= SITE_URL ?>products?sale=1" class="item1">
           <div class="bg">
             <div class="shad">
               Акції

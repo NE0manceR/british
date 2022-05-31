@@ -1,17 +1,17 @@
 <style>
-    .swiper {
-        margin-bottom: 36px;
-    }
+  .swiper {
+    margin-bottom: 36px;
+  }
 
-    .swiper-slide {
-        height: 300px;
-        overflow: hidden;
-    }
+  .swiper-slide {
+    height: 300px;
+    overflow: hidden;
+  }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        color: #DF042E;
-    }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #DF042E;
+  }
 </style>
 
 <div class="banner originalBG">
@@ -34,7 +34,7 @@
         <a href="<?= SERVER_URL ?>products" class="btn btn-custom">
           Обрати партію
           <svg width="53" height="12" viewBox="0 0 53 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11"/>
+            <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11" />
           </svg>
         </a>
       </div>
@@ -124,7 +124,7 @@
         <a href="<?= SERVER_URL ?>products" class="btn btn-custom">
           Перейти до вибору товару
           <svg width="53" height="12" viewBox="0 0 53 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11"/>
+            <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11" />
           </svg>
         </a>
       </div>
@@ -403,7 +403,7 @@
         <a href="<?= SERVER_URL ?>products" class="btn btn-custom">
           Перейти до вибору товару
           <svg width="53" height="12" viewBox="0 0 53 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11"/>
+            <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11" />
           </svg>
         </a>
       </div>
@@ -418,6 +418,17 @@
           Подивіться товари, які є в продажу
         </h1>
       </div>
+        <?php
+        /*
+                <?php
+      $data = $this->load->function_in_alias('products', '__get_Products');
+      ?>
+      <?php
+
+      print_r($data);
+      ?>
+        */
+        ?>
       <div class="cartTov">
         <div class="wow bounceInLeft">
           <div class="p">
@@ -440,16 +451,14 @@
                   </div>
                   <p class="price">
                     2,82
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-currency-dollar"
-                         viewBox="0 0 16 16">
-                      <path
-                          d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                      <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
                     </svg>
                   </p>
-                  <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <button class="callt">
                     Уточнити
                     <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 6H25.5M25.5 6L20.5 1M25.5 6L20.5 11"/>
+                      <path d="M0 6H25.5M25.5 6L20.5 1M25.5 6L20.5 11" />
                     </svg>
                   </button>
                 </div>
@@ -475,16 +484,14 @@
                   </p>
                   <p class="price">
                     5,20
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-currency-dollar"
-                         viewBox="0 0 16 16">
-                      <path
-                          d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                      <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
                     </svg>
                   </p>
-                  <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <button class="callt">
                     Уточнити
                     <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 6H25.5M25.5 6L20.5 1M25.5 6L20.5 11"/>
+                      <path d="M0 6H25.5M25.5 6L20.5 1M25.5 6L20.5 11" />
                     </svg>
                   </button>
                 </div>
@@ -513,16 +520,14 @@
                   </div>
                   <p class="price">
                     2,57
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-currency-dollar"
-                         viewBox="0 0 16 16">
-                      <path
-                          d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                      <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
                     </svg>
                   </p>
                   <button data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Уточнити
                     <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 6H25.5M25.5 6L20.5 1M25.5 6L20.5 11"/>
+                      <path d="M0 6H25.5M25.5 6L20.5 1M25.5 6L20.5 11" />
                     </svg>
                   </button>
                 </div>
@@ -551,16 +556,14 @@
                   </div>
                   <p class="price">
                     2,82
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-currency-dollar"
-                         viewBox="0 0 16 16">
-                      <path
-                          d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                      <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
                     </svg>
                   </p>
                   <button data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Уточнити
                     <svg width="27" height="12" viewBox="0 0 27 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 6H25.5M25.5 6L20.5 1M25.5 6L20.5 11"/>
+                      <path d="M0 6H25.5M25.5 6L20.5 1M25.5 6L20.5 11" />
                     </svg>
                   </button>
                 </div>
@@ -589,7 +592,7 @@
       <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Дізнатись подробиці
         <svg width="53" height="12" viewBox="0 0 53 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11"/>
+          <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11" />
         </svg>
       </button>
     </div>
@@ -625,14 +628,10 @@
       <div class="cerf_right">
         <div id="carouselExampleIndicators3" class="carousel slide carousel-dark" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                    class="active sliderRound" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="sliderRound"
-                    aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="sliderRound"
-                    aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="sliderRound"
-                    aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active sliderRound" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="sliderRound" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="sliderRound" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="sliderRound" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -797,13 +796,11 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -836,23 +833,13 @@
             </div>
           </div>
           <div class="customCarouselWrapper">
-	          <?php foreach ($_SESSION['alias']->videos as $index => $value) { ?>
-              <div
-                  class="customCarouselItem
-                  <?= $index == 0 ? 'active order-first' : "order-" . ($index + 1); ?>"
-                  id="item<?= $index ?>"
-			          <?= $index == 0 ? 'data-index="item0"' : '' ?>
-              >
-                <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/<?= $value->link ?>"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
+            <?php foreach ($_SESSION['alias']->videos as $index => $value) { ?>
+              <div class="customCarouselItem
+                  <?= $index == 0 ? 'active order-first' : "order-" . ($index + 1); ?>" id="item<?= $index ?>" <?= $index == 0 ? 'data-index="item0"' : '' ?>>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?= $value->link ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
               </div>
-	          <?php } ?>
+            <?php } ?>
           </div>
         </div>
       </div>
@@ -861,7 +848,7 @@
         <a href="<?= SERVER_URL ?>products" class="btn-custom btn">
           Обрати категорію та партію
           <svg width="53" height="12" viewBox="0 0 53 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11"/>
+            <path d="M0 6H51.5M51.5 6L46.5 1M51.5 6L46.5 11" />
           </svg>
         </a>
       </div>
@@ -870,43 +857,42 @@
 </div>
 <a href="#" class="goUp">
   <svg class="arrow-top-2" viewBox="0 0 9 14">
-    <path class="svg-arrow"
-          d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z"/>
+    <path class="svg-arrow" d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z" />
   </svg>
 </a>
 <script src="<?= SERVER_URL ?>js/swiper-bundle.min.js"></script>
 
 <script>
-    var swiper3 = new Swiper(".mySwiper", {
-        slidesPerView: 3.5,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+  var swiper3 = new Swiper(".mySwiper", {
+    slidesPerView: 3.5,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 30,
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-            },
-            990: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-            },
-        }
-    });
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      990: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    }
+  });
 </script>

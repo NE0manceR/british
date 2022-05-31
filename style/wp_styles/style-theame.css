@@ -12881,6 +12881,7 @@ body .btn-custom:hover svg {
 
 .card_content .content_wrapper .card_left {
   width: 45%;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -14270,6 +14271,10 @@ body .btn-custom:hover svg {
 
 .category_list .item_container .list_wrapper a:hover {
   text-decoration: underline;
+}
+
+.item_container {
+  display: flex;
 }
 
 @media (max-width: 417px) {

@@ -23,7 +23,7 @@
             Залиште своє ім’я та номер телефону у формі нижче та ми швидко вам зателефонуємо
           </h2>
           <div role="form" class="wpcf7" id="wpcf7-f334-o1" lang="ru-RU" dir="ltr">
-            <form action="/contact-us/#wpcf7-f334-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+            <form action="<?= SERVER_URL ?>save/call-to-me" class="contact-modal ajax" method="POST">
               <div style="display: none;">
                 <input type="hidden" name="_wpcf7" value="334" />
                 <input type="hidden" name="_wpcf7_version" value="5.5.5" />
@@ -32,8 +32,8 @@
                 <input type="hidden" name="_wpcf7_container_post" value="0" />
                 <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
               </div>
-              <p><span class="wpcf7-form-control-wrap text-700"><input type="text" name="text-700" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required reg_form_contact" aria-required="true" aria-invalid="false" placeholder="ОЛЕКСАНДР" /></span><br />
-                <span class="wpcf7-form-control-wrap tel-785"><input type="tel" name="tel-785" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel reg_form_contact" aria-required="true" aria-invalid="false" placeholder="ВАШ НОМЕР ТЕЛЕФОНУ" /></span><br />
+              <p><span class="wpcf7-form-control-wrap text-700"><input type="text"  name="name"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required reg_form_contact" aria-required="true" aria-invalid="false" placeholder="ОЛЕКСАНДР" /></span><br />
+                <span class="wpcf7-form-control-wrap tel-785"><input type="tel" name="phone"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel reg_form_contact" aria-required="true" aria-invalid="false" placeholder="ВАШ НОМЕР ТЕЛЕФОНУ" /></span><br />
                 <input type="submit" value="Замовити дзвінок" class="wpcf7-form-control has-spinner wpcf7-submit reg_form_contact" />
               </p>
               <div class="wpcf7-response-output" aria-hidden="true"></div>
